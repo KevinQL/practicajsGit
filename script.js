@@ -9,6 +9,18 @@ function ejecutar(){
 
 	x = document.querySelectorAll("#principal img");
 
+	animacionImagenes();
+
+}
+
+function mensaje(){
+
+	alert("Hola terricolaa!");
+
+}
+
+function animacionImagenes(){
+	
 	x[0].addEventListener("click",mensaje,false);
 	x[0].addEventListener("mouseover",function(){x[0].width = 225; x[0].height = 225;},false);
 	x[0].addEventListener("mouseout",function(){x[0].width = 200; x[0].height = 200;},false);
@@ -28,12 +40,6 @@ function ejecutar(){
 	x[4].addEventListener("click",mensaje,false);
 	x[4].addEventListener("mouseover",function(){x[4].width = 225; x[4].height = 225;},false);
 	x[4].addEventListener("mouseout",function(){x[4].width = 200; x[4].height = 200;},false);
-}
-
-function mensaje(){
-
-	alert("Hola terricolaa!");
-
 }
 
 window.addEventListener("load",ejecutar,false);
